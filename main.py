@@ -2,6 +2,8 @@ from flask import Flask, request
 from twilio.twiml.voice_response import VoiceResponse, Gather
 from twilio.rest import Client
 import os
+from dotenv import load_dotenv
+load_dotenv()  # Load .env file
 
 app = Flask(__name__)
 
